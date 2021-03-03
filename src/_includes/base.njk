@@ -1,0 +1,53 @@
+---
+whose: own
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>I'm the base layout.</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/random">random</a>
+                    </li>
+                    <li>
+                        <a href="/">home</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <main>
+                <blockquote>
+                    Hello, I'm named as
+                    <em>base.njk</em>
+                    inside a
+                    <em>_layouts</em>
+                    folder
+                </blockquote>
+                <h2>
+                    My Job</h2>
+                <ul>
+                    <li>I'm like a basic markup skeleton where you populate your data.</li>
+                    <li>I can be used by other templates</li>
+                    <li>I can have a front matter of my
+                        {{whose}}</li>
+
+                </ul>
+            </main>
+            <p>
+                I have been called by some data file with front matter - which I will look into and fill in the variables. Observe the title which I found in front matter here is the rest of content after fron't matter. Which i'm displaying below.
+            </p>
+        </header>
+        {{content | safe}}
+        <script src="/assets/js/script.js"></script>
+    </body>
+</html>

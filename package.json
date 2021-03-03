@@ -1,0 +1,17 @@
+{
+  "name": "buildAutomationWithSSG",
+  "version": "1.0.0",
+  "description": "- Runs a script on server to generate markup from data, additional client side script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "npx eleventy",
+    "serve" : "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}

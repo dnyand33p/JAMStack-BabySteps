@@ -1,0 +1,60 @@
+body {
+  font-family: "Helvetica";
+  margin: 0;
+  background-color: #e3e3e3;
+  color: darkolivegreen;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Styling base.njk i.e header of each page */
+header,
+.about,
+.index {
+  border-bottom: 0.2rem dotted brown;
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: maroon;
+}
+header > nav > ul {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+header > nav > ul > li {
+  display: inline;
+  border: 0.1em solid olivedrab;
+  padding: 0.3em;
+}
+
+header > nav > ul > li:hover {
+  background-color: olivedrab;
+  color: lightblue;
+}
+header > nav > ul > li > a {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-size: 1.2em;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about > .num {
+  border: 0.4rem dotted silver;
+  border-radius: 100%;
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+}
